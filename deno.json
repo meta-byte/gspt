@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env src/main.tsx",
+    "dev": "deno run --watch src/main.tsx"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/load": "jsr:@std/load",
+    "axios": "npm:axios@^1.9.0",
+    "dotenv": "npm:dotenv@^16.5.0",
+    "ink": "npm:ink@^5.1.1",
+    "ink-gradient": "npm:ink-gradient@^3.0.0",
+    "ink-select-input": "npm:ink-select-input@^6.2.0",
+    "react": "npm:react@18.2.0"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "deno.ns"],
+    "types": ["deno", "node", "@types/react"],
+    "jsxImportSource": "npm:react@18.2.0",
+    "jsxImportSourceTypes": "npm:@types/react@18.2.0"
+  }
+}
